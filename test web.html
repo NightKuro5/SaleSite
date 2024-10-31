@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma première page web</title>
+    <style>
+        body {
+            background-image: url("https://images.wallpaperscraft.com/image/single/web_shadow_glare_49402_1920x1080.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Styles pour les images dans le contenu */
+        img {
+            max-width: 100%; /* Limite la largeur maximale de l'image à 100% */
+            height: auto; /* Conserve les proportions */
+            display: block; /* Supprime l'espace sous l'image */
+            margin: 20px auto; /* Centre l'image avec une marge */
+        }
+
+        /* Image spécifique pour Game Pass */
+        .img-game-pass {
+            width: 300px; /* Spécifie la largeur souhaitée */
+            height: auto; /* Conserve les proportions */
+            margin-left: 15px; /* Ajoute une marge à gauche de l'image */
+        }
+
+        /* Media Queries pour la responsivité */
+        @media (max-width: 600px) {
+            body {
+                font-size: 14px; /* Taille de police plus petite pour les petits écrans */
+            }
+
+            img {
+                width: 100%; /* Images pleine largeur sur petits écrans */
+            }
+        }
+
+        @media (min-width: 601px) {
+            img {
+                width: 50%; /* Réduire la taille des images sur les grands écrans */
+            }
+        }
+
+        /* Couleur du texte vert */
+        .texte-vert {
+            color: green; 
+            display: inline-block; 
+            vertical-align: top;
+        }
+
+        /* Couleur du texte rouge */
+        .texte-rouge {
+            color: red;
+            text-decoration: underline; /* Utilise 'underline' au lieu de 'silver' */
+        }
+
+        /* Couleur du lien en bleu et suppression du soulignement */
+        a {
+            color: blue; 
+            text-decoration: none; 
+        }
+    </style>
+</head>
+<body>
+    <h1 class="texte-rouge">Mon site de Promo !</h1>
+    <p>Bienvenue sur mon site !</p>
+    
+    <h2 class="texte-vert">Gamepass 1 Mois 10e -> 
+        <a href="https://www.instant-gaming.com/en/12254-buy-microsoft-store-xbox-game-pass-ultimate-1-month-1-month-ultimate-xbox-series-x-s-xbox-one-pc-game-microsoft-store/?_gl=1*dl93cs*_up*MQ..&gclid=Cj0KCQjwsoe5BhDiARIsAOXVoUuCplddtUstqd6fq8HQ5BzYvCHFGRxSIjHnQ1U9MBPXdZfuaKfsshYaArOjEALw_wcB">Clique ici</a>
+    </h2>
+    
+    <img class="img-game-pass" src="https://gaming-cdn.com/images/products/12254/616x353/xbox-game-pass-ultimate-1-month-1-month-ultimate-xbox-series-x-s-xbox-one-pc-game-microsoft-store-cover.jpg?v=1729673526" 
+         alt="Exemple d'image">
+    
+    <h2>Contact</h2>
+    <p>Envoyez-moi un <a href="mailto:nightkuro5@gmail.com">email</a> pour plus de Promo !</p>
+</body>
+</html>
